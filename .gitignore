@@ -1,0 +1,10 @@
+outputs/kept/
+outputs/rejected/
+outputs/borderline/
+outputs/metrics/
+data/
+__pycache__/
+*.pyc
+venv/
+.env
+*.log
