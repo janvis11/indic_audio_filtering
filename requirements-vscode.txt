@@ -1,0 +1,15 @@
+polars
+tqdm
+huggingface_hub
+librosa
+soundfile
+pyarrow
+faster-whisper
+onnxruntime
+requests
+matplotlib
+seaborn
+plotly
+PyYAML
+numpy
+scipy
