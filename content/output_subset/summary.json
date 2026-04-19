@@ -1,0 +1,7 @@
+{
+  "total_samples": 1600,
+  "keep": 778,
+  "review": 801,
+  "reject": 21,
+  "keep_rate_pct": 48.62
+}
