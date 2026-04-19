@@ -3,6 +3,7 @@
 A production-quality audio filtering pipeline for large-scale Indic speech datasets. This pipeline detects and removes low-quality samples using multiple audio quality metrics, enabling efficient training data curation at scale.
 > kindly see the `pipeline_flowchart.png` for the complete flowchart.
 ---
+> related work- `https://github.com/janvis11/asr`
 
 ## Overview
 
@@ -590,6 +591,3 @@ Research implementations reference:
 
 ---
 
-## Contact
-
-For questions about the implementation, please refer to the assignment documentation or contact the author.
