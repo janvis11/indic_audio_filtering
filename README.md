@@ -3,8 +3,8 @@
 A production-quality audio filtering pipeline for large-scale Indic speech datasets. This pipeline detects and removes low-quality samples using multiple audio quality metrics, enabling efficient training data curation at scale.
 > kindly see  [flowchart](https://github.com/janvis11/indic_audio_filtering/blob/main/pipeline_flowchart.png)
 
-> results - [plots] (https://github.com/janvis11/indic_audio_filtering/tree/main/content/output_subset/plots)
-> overall results - [all] (https://github.com/janvis11/indic_audio_filtering/tree/main/content/output_subset)
+> results - [plots](https://github.com/janvis11/indic_audio_filtering/tree/main/content/output_subset/plots)
+> overall results - [all](https://github.com/janvis11/indic_audio_filtering/tree/main/content/output_subset)
 ---
 > related work-  [similar project](https://github.com/janvis11/asr)
 
