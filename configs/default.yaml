@@ -1,0 +1,49 @@
+audio:
+  target_sr: 16000
+  mono: true
+  max_duration_sec: 30.0
+
+modules:
+  enable_vad: true
+  enable_quality_proxy: true
+  enable_asr_bonus: true
+  enable_langid_bonus: true
+
+thresholds:
+  reject:
+    min_duration_sec: 0.50
+    max_duration_sec: 30.0
+    min_rms_db: -45.0
+    max_clipping_ratio: 0.020
+    max_silence_ratio: 0.85
+    min_speech_ratio: 0.15
+    min_quality_proxy: 0.25
+    min_snr_db: 5.0
+  review:
+    max_clipping_ratio: 0.005
+    max_silence_ratio: 0.60
+    min_speech_ratio: 0.30
+    min_quality_proxy: 0.45
+    min_asr_confidence: -1.25
+    min_snr_db: 15.0
+  snr:
+    reject_below_db: 5.0
+    review_below_db: 15.0
+  asr_flags:
+    # ASR-based flag thresholds (bonus evaluation criteria)
+    empty_transcript_penalty: 0.2      # Max ASR score if transcript is empty
+    low_confidence_threshold: -1.25    # TITW threshold for review
+    low_confidence_penalty: 0.35       # Max ASR score if low confidence
+    non_speech_ratio_threshold: 0.15   # Below this = possible non-speech
+    non_speech_penalty: 0.25           # Max ASR score if non-speech detected
+
+scoring:
+  weights:
+    signal: 0.20
+    vad: 0.20
+    quality: 0.25
+    snr: 0.20
+    asr: 0.10
+    language: 0.05
+  keep_min: 70.0
+  review_min: 45.0
